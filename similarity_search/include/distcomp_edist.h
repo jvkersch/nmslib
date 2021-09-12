@@ -33,7 +33,6 @@ template<class T> int levenshtein(const T &s1, const T & s2) {
   return levenshtein(s1.c_str(), s1.size(), s2.c_str(), s2.size());
 }
 
-
 }
 
 

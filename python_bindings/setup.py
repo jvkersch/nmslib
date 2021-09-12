@@ -30,7 +30,7 @@ if not os.path.isdir(libdir) and sys.platform.startswith("win"):
 library_file = os.path.join(libdir, "release", "libNonMetricSpaceLib.a")
 source_files = ['nmslib.cc', 'tensorflow/cpu_feature_guard.cc', 'tensorflow/cpu_info.cc']
 
-libraries = []
+libraries = ["parasail"]
 extra_objects = []
 
 if os.path.exists(library_file):

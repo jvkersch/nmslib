@@ -18,6 +18,7 @@
 #include "spacefactory.h"
 
 #include "factory/space/space_edist.h"
+#include "factory/space/space_nwdist.h"
 #include "factory/space/space_bit_hamming.h"
 #include "factory/space/space_bit_jaccard.h"
 #include "factory/space/space_bregman.h"
@@ -52,6 +53,9 @@ inline void initSpaces() {
   // Registering the Levensthein-distance: regular and normalized
   REGISTER_SPACE_CREATOR(int,   SPACE_LEVENSHTEIN,  CreateLevenshtein)
   REGISTER_SPACE_CREATOR(float, SPACE_LEVENSHTEIN_NORM,  CreateLevenshteinNormalized)
+
+  // Register Needleman-Wunsch distance
+  REGISTER_SPACE_CREATOR(int,   SPACE_NW,  CreateNW)
 
   // Registering Bregman divergences
   REGISTER_SPACE_CREATOR(float,  SPACE_KLDIV_FAST, CreateKLDivFast)

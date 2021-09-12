@@ -280,5 +280,6 @@ DistTypeSIFT l2SqrSIFTPrecompAVX(const uint8_t* pVect1, const uint8_t* pVect2);
  * because the namespace is specified in the distcomp_edist.h
  */
 #include "distcomp_edist.h"
+#include "distcomp_nw.h"
 
 #endif
