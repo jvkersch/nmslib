@@ -35,7 +35,7 @@ if(NOT WIN32)
 endif()
 #message(FATAL_ERROR "stopping... compiler version is: ${CMAKE_CXX_COMPILER_ID} ${CXX_COMPILER_VERSION}")
 
-set(SIMD_FLAGS " -march=native")
+#set(SIMD_FLAGS " -march=native")
 #set(SIMD_FLAGS "-march=x86-64")
 #set(SIMD_FLAGS "-march=core2")
 #set(SIMD_FLAGS "-fpic -msse4.2")
